@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //First 10 numbers
+        let str=' '
+        for(let a=1;a<=10;a++){
+            if(a<=9){
+                str+=`${a},`;
+                // console.log(str);
+            }
+            else{
+                str+=`${a}`;
+                // console.log(str)
+            }
+        }
+        console.log(str)
+        // First 10 numbers
+        let Num=1;
+        let emStr=' '
+        while(Num<=10){
+            if(Num<=9){
+                emStr+=`${Num},`
+            }
+            else{
+                emStr+=`${Num}`
+            }
+            Num+=1;
+            
+        }
+        console.log(emStr);
+        // 5 to 25
+        for(let a=5;a<=25;a++){
+            console.log(a)
+        }
+        //-5 to 25
+        for(let a=-5;a<=25;a++){
+            console.log(a)
+        }
+        //5 to -25
+        for(let a=5;a>=-25;a--){
+            console.log(a)
+        }
+        //-5 to -25
+        for(let a=-5;a>=-25;a--){
+            console.log(a)
+        }
+
+        //prime
+        a=6
+        for(let b=2;b<=Math.trunc(a/2);b++){
+            if (a%b==0){
+                console.log('Not prime')
+            }
+            else{
+                console.log('Prime')
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

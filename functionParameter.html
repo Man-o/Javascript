@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // main()
+        // function main(){
+        //     m1(10,20)
+        //     // m1(1)
+        //     // m1()
+        //     // m1(66,88,77)
+        // }
+        // function m1(a,b){
+        //     console.log("m1 starts");
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log("m1 ends");
+        // }
+        // let a=()=>{
+        //     let n=10;
+        //     b(n);
+        //     b(n+10);
+        //     console.log(b(n));
+        //     console.log(n);
+        // }
+        // let b=(n)=>{
+        //     n=n+10;
+        //     console.log(n);
+        //     // return 1;
+        // }
+        // a();
+
+        // let a1=()=>{
+        //     let i=0;
+        //     let j=a2(++i);
+        //     console.log(`i=${i},j=${j}`);
+        // }
+        // let a2=(n)=>{
+        //     return ++n;
+        // }
+        // a1();
+
+        // let b1=()=>{
+        //     let i=0;
+        //     let j=0;
+        //     j=b2(++i)+b2(i++);
+        //     console.log(`i=${i},j=${j}`)
+        // }
+        // let b2=(a)=>{
+        //     return ++a;
+        // }
+        // b1()
+        function main(){
+            let num1=1;
+            let num2=3;
+            let op1=calc(num1,num2,add)
+            console.log(op1);
+            let op2=calc(num1,num2,mul)
+            console.log(op2);
+        }
+        function calc(n1,n2,type){
+            let res=0;
+            res=type(n1,n2);
+            return res;
+        }
+        function add(a,b){
+            return a+b;
+        }
+        function mul(a,b){
+            return a*b;
+        }
+        main()
+
+    </script>
+</body>
+</html>

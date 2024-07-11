@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function main(a,b){
+        //     console.log(a+b)
+        //     console.log(a-b)
+        //     console.log(a*b)
+        //     console.log(a%b)
+        // }
+        // main(1,2)
+        // function main(){
+        //     m1()
+        //     console.log("Main");
+        // }
+        // function m1(){
+        //     console.log("M1")
+        //     return;
+        // }
+        
+        //main()
+        function main(){
+            let a=m1();
+            console.log(a+5);
+            let b=m1()+100
+            console.log(b)
+        }
+        function m1(){
+            console.log("M1")
+            return true;
+            console.log('Mano') //Unreachable statement
+        }
+        main()
+        let wish =()=>{
+            let mon=Number(prompt('Enter ur bday month:'))-1;
+            let da=Number(prompt('Enter ur bday date:'));
+            let date=new Date();
+            let m=date.getMonth();
+            let d=date.getDate();
+            if (m==mon && d==da){
+                console.log("Today is your bday");
+            }
+            else{
+                console.log("Today is not your Bday")
+            }
+           
+        }
+        wish()
+        //  let a=()=>{
+        //     console.log("fgdffdfgd");
+        // }
+        // a();
+    </script>
+</body>
+</html>

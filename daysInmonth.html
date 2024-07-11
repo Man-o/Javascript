@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let y=Number(prompt("Enter year:"));
+        // let m=Number(prompt("Enter month:"));
+        // if(m==1||m==3||m==5||m==7||m==8||m==10||m==12){
+        //     console.log(`${m} month has 31 days`);
+        // }
+        // else if(m==4||m==6||m==9||m==11){
+        //     console.log(`${m} month has 30 days`);
+        // }
+        // else if(m==2){
+        //     if(y%400==0 || y%4==0 && y%100!==0){
+        //         console.log(`${m} month has 29 days`); 
+        //     }
+        //     else{
+        //         console.log(`${m} month has 28 days`);
+        //     }
+        // }
+        //Using switch
+        function main(){
+            let y=Number(prompt("Enter year:"));
+            let m=Number(prompt("Enter month:"));
+            switch (m){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    console.log('31 days')
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                console.log('30 days')
+                    break;
+                case 2:
+                    if(y%400==0 || y%4==0 && y%100!==0){
+                        console.log('29 days')
+                    }
+                    else{
+                        console.log('28 days')
+                    }
+                    break;
+                default:
+                    console.log('Invalid month')
+
+                
+            }
+        }
+        main()
+    </script>
+</body>
+</html>

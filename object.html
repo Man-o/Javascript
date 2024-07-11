@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <script>
+        //object literal
+        // let me={}
+        // me.name='Mano'
+        // me.age=21
+        // console.log(me)
+        // let obj={name:'mano',add:'Blr'}
+        // console.log(obj)
+
+        //object instance way
+        // let obj=new Object()
+        // obj.name='mano'
+        // obj.age=21
+        // console.log(obj)
+
+        //function constructor
+        /*function obj(n,a){
+            this.name=n
+            this.age=a
+        }
+        let std1=new obj('mano',21)
+        let std2=new obj('freaky',21)
+        console.table(std1)
+        console.log(std1)*/
+
+        //CRUD in object
+        //Create
+        /*let obj={};
+        obj.name='Mano';
+        obj.designation='Python developer';
+        console.log(obj)*/
+
+        //READ
+        /*let obj={name:'mano',add:'Blr'};
+        console.log(obj.name);
+        console.log(obj.add);*/
+
+        //Update
+        /*let obj={name:'mano',add:'Blr'};
+        obj.name='Freaky'
+        console.log(obj)*/
+
+        //Delete
+        // let obj={name:'mano',add:'Blr',designation:'Python developer'};
+        // delete obj.designation
+        // console.log(obj)
+
+        //methods
+        /*let obj={
+            name:'Mano',
+            curAge:20,
+            ageOffirstyear:function(diff){
+                return this.curAge-diff
+            }
+        }
+        console.log(obj.ageOffirstyear(3))*/
+
+        //object.asign()
+        //shallow copy
+        /*let obj={name:'mano',age:21}
+        let obj1=obj
+        obj1.name='Freaky'
+        console.log(obj)
+        console.log(obj1)*/
+
+        //deep copy
+        /*let obj={name:'mano',age:21};
+        let obj1=Object.assign({},obj);
+        obj1.name='Freaky'
+        console.log(obj==obj1)
+        console.log(obj)
+        console.log(obj1)*/
+
+        //object.keys()
+        /*let obj={name:'mano',age:21};
+        console.log(Object.keys(obj));*/
+
+        //object.values()
+        /*let obj={name:'mano',age:21};
+        console.log(Object.values(obj));*/
+
+        //object.entries()
+        /*let obj={name:'mano',age:21};
+        console.log(Object.entries(obj));*/
+
+        //object.freez()
+        /*let obj={name:'mano',age:21};
+        let obj2=Object.freeze(obj)
+        obj2.name='Freaky'
+        obj2.des='python dev'
+        delete obj2.name
+        console.log(obj2)*/
+
+         //object.seal()
+        /*let obj={name:'mano',age:21};
+        let obj2=Object.seal(obj)
+        obj2.name='Freaky'
+        obj2.des='python dev'
+        delete obj2.name
+        console.log(obj2)*/
+
+        //accessing with loop
+        /*let x={
+            name:'mano',
+            age:21
+        }
+        for(let i in x){
+            console.log(x[i])
+            console.log(i)
+        }*/
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

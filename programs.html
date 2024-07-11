@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programs</h1>
+    <script>
+        //electricity bill
+        // let unit=Number(prompt("Enter units"));
+        // let amt=0;
+        // if(unit<=200){
+        //     console.log(200*0)
+        // }
+        // else if(unit>=201 && unit<=250){
+        //     console.log(200*0+(unit-200)*3)
+        // }
+        // else if(unit>250 && unit<=350){
+        //     console.log(200*0+50*3+(unit-250)*5)
+        // }
+
+
+        //fibonacci series
+        // let a=0
+        // let b=1
+        // let c=0
+        // n=10
+        // for(i=1;i<=n;i++){
+        //     c=a+b 
+        //     console.log(c)
+        //     a=b
+        //     b=c
+        // }
+
+
+        //check fibonacci series or not 0,1,1,2,3,5,8,13,21,34,55,89
+        let a=0;
+        let b=1;
+        let c=0;
+        let n=10;
+        let check=Number(prompt('Enter checkNo:'));
+        for(i=1;i<=n;i++){
+            c=a+b;
+            if (check==a){
+                console.log(`${check} is  a Fibonacci series`)
+                break
+            }
+            else{
+                console.log('not')
+            }
+            a=b;
+            b=c;    
+        }
+
+        //factorial 1!+2!+3! 
+        // let fa=1
+        // let n=4
+        // for(let i=1;i<=n;i++){
+        //     fa*=i   //1*1=1;1*2=2;2*3=6
+        // }
+        // console.log(fa)
+
+        //strong number
+        // let numb=2
+        // let dup=numb
+        // let res=0
+        // while(numb!=0){
+        //     let fact=1
+        //     let rem=numb%10
+        //     for(let i=1;i<=rem;i++){
+        //         fact=fact*i
+        //     }
+        //     res+=fact
+        //     numb=Math.trunc(numb/10)
+        // }
+        // if (res===dup){
+        //      console.log('strong')
+        // }
+        // else{
+        //     console.log('not')
+        //  }
+
+        //fibonacci series given range
+        // let a=0
+        // let b=1
+        // let c=0
+        // n=55
+        // for(let i=1;i<=n;i++){
+        //     c=a+b 
+        //     if (i>=30){
+        //         console.log(c)
+        //     }
+        //     a=b
+        //     b=c
+        //}
+
+
+        
+
+    </script>
+</body>
+</html>

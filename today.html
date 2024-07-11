@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day=new Date()
+        let toDay=day.getDay()
+        
+        str='today is'
+        switch(toDay){
+            case 1:
+                console.log(`${str} Monday`);
+                break;
+            case 2:
+                console.log(`${str} Tuesday`)
+                break;
+            case 3:
+                console.log(`${str} Wednesday`)
+                break;
+            case 4:
+                console.log(`${str} Thursday`)
+                break;
+            case 5:
+                console.log(`${str} Friday`)
+                break;
+            case 6:
+                console.log(`${str} Saturday`)
+                break;
+            default:
+                console.log(`${str} Weekend`)
+
+        }
+        // if(toDay==1){
+        //     console.log(`${str} Monday`)
+        // }
+        // else if(toDay==2){
+        //     console.log(`${str} Monday`)
+        // }
+    </script>
+</body>
+</html>
